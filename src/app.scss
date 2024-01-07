@@ -1,0 +1,61 @@
+// Can also use CSS but is a bit faster and has easier naming conventions
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(13, 13, 13);
+    color: lightgrey;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;   //Take colour from the parent
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+
+@mixin mobile {
+    @media (max-width: 738px) {
+      @content;
+    }
+  }
+  @mixin tablet {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+  @mixin desktop {
+    @media (max-width: 1366px) {
+      @content;
+    }
+  }
+  
+
+
+
+//For Test.jsx
+// .course{
+//     height: 100vh;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+//     .box{
+//         width: 200px;
+//         height: 200px;
+//         background-color: white;
+        
+//     }
+// }

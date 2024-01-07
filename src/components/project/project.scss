@@ -1,0 +1,130 @@
+@import "../../app.scss";
+.project{
+    position: absolute;
+    background: linear-gradient(180deg, rgb(44, 44, 44),rgb(13, 13, 13));
+    // position: relative;
+    height: 100%;
+    width: 100%;
+    // background-color: pink;
+    overflow: hidden;
+
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 10vh;
+        margin-top: 7vh;
+        z-index: 100;
+        // border: 2px solid white;
+        h1{
+            font-size: 100px;
+            // z-index: 1;
+            // overflow: hidden;
+    
+            @include tablet{
+                font-size: 50px;
+            }
+    
+    
+            @include mobile{
+                font-size: 30px;
+                padding-top: 7vh;
+                padding-left: 3%;
+            }
+            
+        }
+    }
+    .bg{
+        position: absolute;
+        background: linear-gradient(180deg,rgb(44, 44, 44), rgb(13, 13, 13));
+        height: 100%;
+        width: 100%;
+        z-index: -3;
+    }
+
+    .container{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 2px solid white;
+
+        
+        .carousel{
+            
+            position: relative;
+            width: 90%;
+            height: 100%;
+            margin: auto;
+            margin-top: -10vh;
+           
+            
+
+            .item{
+                // border: 2px solid white;
+                margin-right: 10%;
+                
+                p{
+                    // font-family: Poppins, sans-serif;
+                    // font-size: 14px;  
+                }
+
+                .image{
+                    // border: 2px solid white;
+                    // padding-top: 5%;
+                    padding-bottom: 2%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    img{
+                        height: 50%;
+                        width: 50%;
+
+                    }
+                }
+
+                .heading{
+                    display: flex;
+                    justify-content: space-around;
+                    // border: 2px solid white;
+                    padding: 2%;
+                    font-family: 'Abril Fatface', serif;
+                    font-size: 24px;  
+
+                }
+
+                .button{
+                    padding: 2%;
+                    margin-top: 3%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+
+
+                    .outlined-dark-button {
+                        background-color: transparent;
+                        color: rgb(201, 195, 195);
+                        border: 2px solid #333;
+                        padding: 10px 20px;
+                        border-radius: 4px;
+                        font-size: 16px;
+                        cursor: pointer;
+                      }
+                      
+                      .outlined-dark-button:hover {
+                        background-color: #333;
+                        color: #fff;
+                      }
+                      
+                }
+            }
+        }
+
+    }
+
+
+}

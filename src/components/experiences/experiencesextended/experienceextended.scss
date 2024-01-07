@@ -1,0 +1,21 @@
+.experienceextended{
+    background: linear-gradient(180deg, rgb(44, 44, 44), rgb(13, 13, 13));
+    position: relative;
+    height:100%;
+    // width: 100%;
+    z-index: -4;
+    margin: 0;
+    padding: 0;
+    // color: black;
+    // overflow: hidden;
+
+    .container{
+        background-image: url("/stars.png");
+        height: 100%;
+        opacity: 0.3;
+        filter: blur(6px);
+    }
+
+
+
+}

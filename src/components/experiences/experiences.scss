@@ -1,0 +1,93 @@
+@import "../../app.scss";
+
+.experiences{
+    
+    
+    background: linear-gradient(180deg, rgb(13, 13, 13),rgb(44, 44, 44));
+    position: relative;
+    height:100%;
+    z-index: -3;
+    margin: 0;
+    padding: 0;
+    // color: black;
+    // overflow: hidden;
+
+    .container{
+        background-image: url("/stars.png");
+        height: 200vh;
+    }
+
+    .title{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 20vh;
+
+
+        // border: 2px solid white;
+
+
+        h1{
+            font-size: 100px;
+            // z-index: 1;
+            // overflow: hidden;
+    
+            @include tablet{
+                font-size: 50px;
+            }
+    
+    
+            @include mobile{
+                font-size: 30px;
+                padding-top: 7vh;
+                padding-left: 3%;
+            }
+            
+        }
+    
+    }
+
+
+    .vertical-timeline-element{
+        padding-bottom: 13vh;
+
+        @media screen and ( max-height: 890px ) { 
+
+            padding-bottom: 1vh;
+
+         }
+
+
+        @include mobile{
+            font-size: 13px;
+        }
+    }
+
+    .vertical-timeline-element-icon {
+        // width: 10%;
+        // height: 10%;
+        //Line Icon
+
+        background: linear-gradient(180deg, rgb(13, 13, 13),rgb(255, 255, 255));
+    }
+
+    .vertical-timeline-element-content {
+        //ContentBox
+        // background-color: black;
+        color: #333333;
+        @include mobile{
+            font-size: 13px;
+        }
+
+        background: linear-gradient(180deg, rgb(255, 255, 255),rgb(139, 139, 139));
+
+    }
+
+    .vertical-timeline-element-date{
+        color: white;
+        @include mobile{
+            font-size: 13px;
+        }
+    }
+
+}

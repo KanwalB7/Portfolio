@@ -1,0 +1,232 @@
+@import "../../app.scss";
+
+
+.hero{
+    height: calc(100vh - 100px); //Since the Hero page is 100 vh but has a 100 px navigation
+    background: linear-gradient(180deg, rgb(13, 13, 13), rgb(44, 44, 44) );
+    // z-index: -1;
+    overflow: hidden; /* Ensure that child elements don't overflow */
+
+    .bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background: url("/stars-blur.png"); 
+        // margin-top: 10%;
+    }
+
+
+    .imageContainer{
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: -10vh;
+        margin-top: -5vh;
+
+        @media (max-width: 3000px ) {
+            // margin-top: 10vh ;
+        }
+
+
+        @media (max-width: 1615px ) {
+             
+            margin-top: -2vh;
+        }
+
+        @media (max-width: 1330px ) {
+             
+
+            margin-top: 0vh;
+            // margin-right: -17vh;
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+        @include mobile {
+
+            height: 50%;
+            width: 100%;
+            top: unset;
+            bottom: 0;
+            margin-right: 0vh;
+            margin-bottom: 10vh;
+          }
+      
+        //   img{
+        //     width: 100%;
+        //     height: 100%;
+        //     object-fit: cover;
+        //   }
+
+
+    }
+
+
+    .wrapper{
+
+        max-width: 1366px; //Common Breakpoint
+        height: 75%;
+        margin: auto;   //To center it
+
+        // border: 2px solid white;
+
+        .textContainer{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            // border: 2px solid white;
+
+            width: 70%; //Inorder to prevent overlaying layer
+
+
+            @include mobile{
+
+                margin-top: 5vh;
+                height: 50%;
+                width: 100%;
+                gap: 10px;
+                // align-items: center;
+                text-align: center;
+            }
+
+            @include tablet{
+                height: 50%;
+                width: 100%;
+                gap: 10px; 
+            }
+
+        }
+
+        img{
+            width: 50px;
+
+        }
+
+        h2{
+            font-size: 30px;
+            color: purple;
+            letter-spacing: 5px;
+            // border: 2px solid white;
+            padding-left: 2%;
+        }
+
+        h1{
+            padding-left: 2%;
+            font-size: 80px;
+
+            @media (max-width: 1173px) {
+                font-size: 50px;
+            }
+            @include mobile{
+                font-size: 17px;
+
+            }
+
+            @include tablet{
+                font-size: 40px;
+            }
+        }
+        
+        .lottie{
+            position: relative;
+            display: flex;
+            // border: 2px solid white;
+        }
+
+        
+
+
+        .scroll-down{
+            position: absolute;
+            bottom: 0;
+            width: 70%;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1%;
+            margin-left: 1%;
+            // z-index: 10;
+            
+        }
+
+        .blink{
+            padding-left: 3%;
+        }
+
+        .blinkImage{
+            display: flex;
+            padding-left: 3%;
+            // width: 3%;
+            height: 10%;
+            // border: 2px solid white;
+            
+        }
+        .lottie{
+            width: 17%;
+            height: 17%;
+        }
+
+        .typedElement{
+            color: rgb(201, 195, 195);
+        }
+
+     
+
+    }
+
+   
+
+    .slidingTextContainer{
+        position: absolute;
+        font-size: 50vh;
+        bottom: -130px;      //Important to relatively position it...
+
+        white-space: nowrap;    //In order to see it in single line
+        color: #c2c2c209;
+        width: 70%;     //In order to implement infinite loop
+        font-weight: bold;
+        height: 70%;
+    }
+    
+
+    .Rahul{
+
+        height: 1000px;
+        width: 1000px;
+
+        @media (max-width: 3000px ) {
+            height: 1000px ;
+            width: 1000px;   
+        }
+
+        @media (max-width: 1615px ) {
+            height: 800px ;
+            width: 800px;   
+        }
+
+        @media (max-width: 1330px ) {
+        
+                height: 700px;
+                width: 700px;
+        }
+
+        @media (max-width: 925px ) {
+        
+            height: 500px;
+            width: 500px;
+    }
+
+    }
+
+    
+
+    overflow: hidden;       //Control the overflow
+    position: relative;
+}

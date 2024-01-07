@@ -1,0 +1,94 @@
+@import "../../app.scss";
+
+.navbar{
+    height: 100px;
+    // border: 2px solid white;
+    width: 100%;
+    // display: flex;
+
+    // justify-content: space-around;
+
+    .blink{
+        // position: absolute;
+        z-index: 1111111;
+    }
+
+    .lottie{
+
+        @include mobile{
+            display: none;
+        }
+        // border: 2px solid white;
+        margin-top: 35%;
+        // overflow: hidden;
+        height: 70%;
+        width: 73%;
+        z-index: 99;
+    }
+    
+
+    .wrapper{
+        // border: 2px solid white;
+        // max-width: 1366px;  //One of the famous breakpoints
+        // margin: auto;
+        display: flex;
+        // flex-direction: row-reverse;
+        align-items: center;
+        margin: auto;
+        justify-content: space-between;
+        padding-right: 3%;
+        //Center the wrapper
+        height: 100%;
+        // z-index: 2;
+        width: 100%;
+        color: white;
+    }
+
+    span{
+        display: flex;
+        font-weight: bold;
+        margin-left: 10%;
+        // border: 2px solid white;
+        padding-left: 5%;
+
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+
+        li{
+            padding-right: 1%;
+            text-decoration: none;
+            list-style: none;
+
+        }
+        
+    }
+    
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    .social{
+
+        @media (max-width: 330px ) {
+            display: none;
+        }
+        display: flex;
+        // margin-left: 10%;
+        gap: 17px;  //Gap between each logo
+        // border: 2px solid white;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+
+        .Github{
+            width: 47px;
+            height: 47px;            
+        }
+
+    }
+
+
+}
